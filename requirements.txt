@@ -1,0 +1,15 @@
+gradio>=5.0,<7
+sdv>=1.32,<2
+pandas>=2.0,<3
+numpy>=1.24,<3
+scikit-learn>=1.1
+torch>=2.2
+matplotlib>=3.7
+tqdm>=4.64
+transformers>=4.40,<5
+accelerate>=1.1
+datasets>=2.5
+joblib>=1.3
+scipy>=1.10
+six>=1.16
+fsspec>=2023.1
