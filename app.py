@@ -320,4 +320,11 @@ with gr.Blocks(title="Laboratorio de datos sintéticos", css=CSS) as demo:
 
 
 if __name__ == "__main__":
-    demo.queue().launch(share=True, debug=True)
+    # Los modelos, gráficos e historiales se guardan en Google Drive cuando la
+    # aplicación se ejecuta desde Colab. Gradio necesita autorización explícita
+    # para entregar archivos ubicados fuera de la carpeta del repositorio.
+    demo.queue().launch(
+        share=True,
+        debug=True,
+        allowed_paths=[str(RUNS_DIR.resolve())],
+    )
